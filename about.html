@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" href = "logo2.png" type = "image/x-icon">
+  <TITLE>Forever Nature</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="about.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body >
+
+
+  <nav>
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+       ForeverNature
+    </div>
+    <div class="nav-items">
+       <li><a href="homepage.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="blogs.html">Blogs</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li><a href="feedback.html">Feedback</a></li>
+    </div>
+    <div class="search-icon">
+       <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+       <input type="search" class="search-data" placeholder="Search" required>
+       <button type="submit" class="fas fa-search"></button>
+    </form>
+ </nav>
+
+ <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+ </script>
+  <header class="navbar hero" role="banner">
+   <div class="container">
+   </div>
+</header>
+
+<div id="about-main">
+   <div class="jumbotron">
+       <div class="jumbotron-inner">
+           <div class="top-box">
+               <div class="content-box">
+                   <h1>
+                       About APIMATIC
+                   </h1>
+                   <p>
+                       APIMatic is a developer experience platform for web APIs.  <br /> Our mission is to make developers productive through automatic code generation.
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="img-layer-container">
+           <div class="team-image" id="team-image">
+               <img src="https://apimatic.io/img/theme/aboutUs/images-1.png" />
+           </div>
+
+           <div class="circles-container">
+               <div class="img-1">
+                   <img src="https://apimatic.io/img/theme/aboutUs/Circles-1-1.svg" />                        
+               </div>
+               <div class="img-2">
+                   <img src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />                        
+               </div>                    
+           </div>           
+       </div>
+   </div>
+   <div class="story-container">
+       <div class="need-for-dx-container">
+           <h3 class="text-center">
+               Need for DX
+           </h3>
+           <p>
+               Application Programming Interfaces (APIs) have taken the world by storm and are now the de facto standard of software communication. Almost every software product nowadays consumes APIs. The business model of numerous companies around the world relies upon the consumption of their APIs. API providers, therefore, strive to increase API adoption rates by spending millions of dollars every year to improve developer experience. This is usually done by providing Software Development Kits (SDKs) and API documentation to developer consuming their API(s). Developing SDKs and writing documentation, however, are arduous, monotonous and error-prone tasks. It is a slow process and costs a lot of time and money.
+           </p>
+           <div class="img-container">
+               <img src="https://apimatic.io/img/theme/aboutUs/dxFlow.svg" alt="apimatic developer experience process" class="img-responsive"/>
+           </div>
+       </div>
+       <div class="container-divider"></div>
+       <div class="our-tech-container">
+           <h3 class="text-center">
+               Our Technology
+           </h3>
+           <p>
+               Our code generation engine enables API providers to generate SDKs for their APIs within minutes and at a fraction of the cost. We provide tools like our API editor and API transformer to further aid API providers in minimizing the time required to ship excellent quality SDKs to the developers using their APIs. Our code generation engine is also capable of generating succinct and error-free documentation for APIs and SDKs, both. The documentation for the SDKs includes dynamic screenshots detailing usage instructions tailored to the provider's specific API and also code snippets showing example usage. As the cherry on the cake, we provide beautifully designed DX portals to encapsulate this documentation.
+           </p>
+           <div class="img-container">
+               <img src="https://apimatic.io/img/theme/cgaasIcons/cgaasProcess.gif" alt="apimatic code generation engine" class="img-responsive"/>
+           </div>
+       </div>
+       <div class="container-divider"></div>
+       <div class="origin-story-container">
+           <h3 class="text-center">
+               Origin Story
+           </h3>
+           <p>
+               While doing research work for their PhDs from the University of Auckland in 2014, our founders came across one of the API industry's pain points: SDKs. They realized that API providers who spent hundreds of thousands of dollars every year on improving developer experience, by providing SDKs and user-friendly documentation were able to reach a wider developer audience for their APIs compared to API providers who weren't able to do so.
+           </p>
+           <p>
+               It was so clear that even though writing SDKs and documentation was a difficult and expensive task, it followed repeatable patterns which could be defined as logic blocks in a code generation engine. So, as a research project, they started working on a code generation engine which dynamically generated SDKs using API description as input.
+           </p>
+           <p>
+               After a rigorous journey, this research project was selected as a candidate for commercialization by Return on Science (a NZ national research commercialization program focused on bringing new academic research to market) and the concept was transformed into a product i.e. APIMatic.
+           </p>
+       </div>
+       <div class="container-divider"></div>
+       <div class="today-container">
+           <h3 class="text-center">
+               Flash Forward Today
+           </h3>
+           <p>
+               APIMatic has come a long way since its inception 3 years ago. Having started with only generating SDKs, APIMatic now provides solutions in other areas of developer experience as well. Presently, APIMatic is used by numerous organizations around the world to:
+           </p>
+           <ul>
+               <li>Create and store definitions of their APIs</li>
+               <li>Generate SDKs for their APIs for 10 platforms</li>
+               <li>Keep these SDKs in sync with API updates</li>
+               <li>Convert API descriptions into multiple formats (Swagger, API Blueprint, RAML etc.)</li>
+               <li>Generate beautiful documentation for their APIs and SDKs</li>
+               <li>Generate complete Developer Experience API Portals</li>
+           </ul>
+       </div>
+       <div class="container-divider"></div>
+   </div>
+</div>  
+
+ <footer>
+  <span>Created By <a href="homepage.html">Forever nature</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+</footer>
+
+</body>
+</html>
